@@ -107,12 +107,12 @@ public class WFC {
     }
 
     static class Point{ //路径点信息
-        String name = ""; //名字
-        String shortName = ""; //缩写，仅作用于Xaero
-        boolean show; //是否显示，遵循Voxel定义方法：true为显示，false为隐藏（Xaero正好相反）
-        int color = 0; //颜色，只在Xaero->Voxel单向转换时有作用
-        int x, y, z; //三维坐标
-        int dim; //维度，遵循Xaero定义方法：1为末地，0为主世界，-1为下届（注：当VoxelMap的路径点跨纬度显示打开时这一信息将失效）
+        String name = "";       //名字
+        String shortName = "";  //缩写，仅作用于Xaero
+        boolean show;           //是否显示，遵循Voxel定义方法：true为显示，false为隐藏（Xaero正好相反）
+        int color = 0;          //颜色，只在Xaero->Voxel单向转换时有作用
+        int x, y, z;            //三维坐标
+        int dim;                //维度，遵循Xaero定义方法：1为末地，0为主世界，-1为下届（注：当VoxelMap的路径点跨纬度显示打开时这一信息将失效）
         void print(){
             System.out.println("name:"+name+"\n");
             System.out.println("shortName:"+shortName+"\n");
